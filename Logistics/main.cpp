@@ -7,6 +7,10 @@ int main() {
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
 
+    // 这是我做的一处小修改
+    std::cout << "欢迎使用本系统！\n";
+    // ------------------
+
     System sys;
     if (sys.loadFromFile()) {
         std::cout << "数据加载成功。\n";
